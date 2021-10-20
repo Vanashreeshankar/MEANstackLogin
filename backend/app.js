@@ -18,7 +18,7 @@ app.use(cors({
 
 var mongoose =require('mongoose');
 
-mongoose.connect("mongodb+srv://Vanashree:Vana~22Shankar@cluster0.c9ygt.mongodb.net/user_data?retryWrites=true&w=majority",
+mongoose.connect("mongodb+srv://User_name:Password@cluster0.c9ygt.mongodb.net/user_data?retryWrites=true&w=majority",
 {useNewUrlParser: true, 
 useUnifiedTopology: true}, () =>
  console.log("connected to database!")
