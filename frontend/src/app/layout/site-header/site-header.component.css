@@ -1,0 +1,19 @@
+.navbar{
+    justify-content: space-between;
+}
+.heading{
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 400;
+}
+.heading span{
+    color: #000;
+}
+.button-row{
+    position: relative;
+    display: table-cell;
+    width: 490px;
+    margin-left: 30rem;
+    
+}

@@ -1,0 +1,64 @@
+<mat-toolbar color="warn" class="navbar">
+  <div class="heading"><span>Email</span>Marketing</div>
+  <div class= button-row align="end">
+      <button  mat-flat-button color="warn" routerLink="/login">SignUp</button>
+  </div>
+</mat-toolbar>
+
+
+
+<mat-card class="container">
+    
+    <mat-tab-group color="warn">
+        <mat-tab label="LogIn">
+            <form [formGroup]="loginForm" class="c-form">
+                <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput required formControlName="email">
+                  </mat-form-field>
+                
+                  <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput required formControlName="password">
+                  </mat-form-field>
+
+                  <div class="btn"  align="center">
+                    <button mat-flat-button color="warn" (click)="login()">LogIn</button>
+                </div>
+
+            </form>
+        </mat-tab>
+        <mat-tab  label="SignUp">
+            <form [formGroup]="signupForm"  class="c-form">
+                <mat-form-field color="warn" class="c-width" appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput required formControlName="name">
+                </mat-form-field>
+        
+                <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput required formControlName="email">
+                    
+                  </mat-form-field>
+                
+                  <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput required formControlName="password">
+                    
+                  </mat-form-field> 
+
+                  <mat-form-field color="warn" class="c-width" appearance="outline">
+                    <mat-label>Conform Password</mat-label>
+                    <input matInput required formControlName="cpass">
+                </mat-form-field> 
+
+                  <div class="btn"  align="center">
+                    <button mat-flat-button  color="warn" (click)="signup()">SignUp</button>
+                </div>
+          
+                
+            </form>
+            
+        </mat-tab>
+    </mat-tab-group>
+</mat-card>

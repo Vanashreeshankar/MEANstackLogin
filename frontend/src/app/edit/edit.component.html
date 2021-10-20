@@ -1,0 +1,45 @@
+
+<div class="container">
+
+  <mat-card >
+    <div class="sub-container">Edit Details</div>
+     
+      <form [formGroup]="updateForm" class="c-form">
+          <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+              <mat-label >Type</mat-label>
+              <input matInput required formControlName="type" #type>
+            </mat-form-field>
+
+            <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+              <mat-label>Email Id</mat-label>
+              <input matInput required formControlName="email_id" #email_id>
+            </mat-form-field>
+          
+            <mat-form-field color="warn" class="c-width" hideRequiredMarker appearance="outline">
+              <mat-label>Category</mat-label>
+              <input matInput required formControlName="category" #category>
+              <mat-select>
+                <mat-option value="Premium" color="accent">Premium</mat-option>
+                <mat-option value="Free" color="primary">Free</mat-option>
+                <mat-option value="Expired" color="warn">Expired</mat-option>
+              </mat-select>
+              
+            </mat-form-field>
+
+            <div class="btn"  align="center">
+              <button mat-raised-button color="accent" routerLink="/home">Back</button>&nbsp;
+                    <button mat-raised-button color="warn"  type="submit" (click)="updateEmail(type.value, email_id.value, category.value)" [disabled]="updateForm.pristine || updateForm.invalid">Update</button>
+          </div>
+
+      </form>
+  
+</mat-card>
+
+</div>
+
+
+  
+    
+
+
+ 

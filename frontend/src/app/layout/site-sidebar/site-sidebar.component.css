@@ -1,0 +1,23 @@
+.sidebar{
+    width: 200px;
+    height: 200px;
+    
+    color:#ff0f0f;
+   
+}
+.container{
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 2px;
+    width: 180px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+ 
+    
+}
+
+span{
+    color: #ff0f0f;
+}

@@ -1,0 +1,13 @@
+<mat-toolbar color="warn" class="navbar">
+    <div class="heading"><span>Email</span>Marketing</div>
+    <div class="button-row">
+        <button  mat-flat-button color="warn" routerLink="/home" routerLinkActive="active">Home</button>
+        <button  mat-flat-button color="warn" routerLink="/category" routerLinkActive="active">Category</button>
+        <button mat-flat-button color="warn">Emails</button>
+        <button mat-flat-button color="warn" (click)="logout()">Logout</button>
+        <button mat-flat-button color="warn"><mat-icon>account_circle</mat-icon> {{username}}</button>
+        
+
+    </div>
+</mat-toolbar>
+

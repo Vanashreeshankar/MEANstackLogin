@@ -1,0 +1,36 @@
+.navbar{
+    justify-content: space-between;
+}
+.heading{
+    font-size: 50px;
+    font-weight: 400;
+}
+.heading span{
+    color: #000;
+}
+.button-row{
+    position:relative;
+    width: 490px;
+}
+.container{
+    width: 350px;
+    height: 450px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;  
+    margin-top: 100px;
+}
+.c-form{
+    margin-top: 25px;
+    min-width: 150px;
+    max-width: 350px;
+    width: 100%;
+}
+
+
+.c-width{
+    width: 100%;
+}
+td{
+    padding-right: 8px;
+}
